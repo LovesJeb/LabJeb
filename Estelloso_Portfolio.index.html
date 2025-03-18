@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PRACTICAL EXAM PORTFOLIO</title>
+    <style> 
+     @keyframes glowing-border {
+            0% { box-shadow: 0 0 30px 	#e0be99; border-color: 	#e0be99; }
+            50% { box-shadow: 0 0 20px 	#424c51; border-color: 	#424c51; }
+            100% { box-shadow: 0 0 30px 	#e0be99; border-color: 	#e0be99; }
+        }
+    
+        .social-container {
+            display: flex;
+            gap: 20px;
+        }
+        .social-logo {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .social-logo svg {
+            width: 30px;
+            height: 30px;
+            fill: white;
+        }
+        .facebook { background-color: #1877F2; }
+        .instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+        .tiktok { background-color: #000; }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: 	#242424;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 15px;
+            color: white;
+        }  
+
+        header h1 {
+            color: black;
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        section {
+             display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            margin: 40px;
+            background-color: #e0be99;
+            border-radius: 8px;
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+             animation: glowing-border 2.3s infinite alternate;
+        }
+     
+
+          .profile-img {
+            width: 290px;
+            height: 290px;
+            margin:40px;
+            border-radius: 40px;
+            margin-right: 50px;
+            cursor: pointer;
+            transition: opacity 3s ease-in-out;
+        }
+
+        .fade-out {
+            opacity: 4;
+        }
+
+        .fade-in {
+            opacity: 4;
+        }
+
+        h1, h2, h3 {
+            margin:25px;
+            color: black;
+        }
+
+        ul {
+            list-style-type:;
+            padding: 20px;
+        }
+
+        li {
+            padding: 5px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        b {
+            color: brown;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: black;
+            color: silver;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+           p {
+            margin:15px;
+            max-width: 500px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+
+    <header>
+        <h1></h1>
+        <p1>Welcome here to my website!</p1>
+    </header>
+    <br>
+ 
+<br>
+  <section>
+        <div>
+            <h1>About Me</h1>
+            <p>Hello! I'm <b>James Brian M. Estelloso</b>, a 17-year-old Grade 11 ICT student at Cavite Community Academy Inc. I enjoy learning and coding projects like this.</p>
+        </div>
+        <img id="profileImg" 
+             src="https://scontent.fmnl33-6.fna.fbcdn.net/v/t39.30808-6/475722828_649623807500655_7510770916107444697_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHG0LvUqjSc0DN3bDriN5PAMXSLt1i3noIxdIu3WLeegpBCggFH5xM0DRD-DbEObZz2ODssPH61oMyWumIbPodF&_nc_ohc=aW1Jv_Apl7IQ7kNvgFDj_AL&_nc_oc=Adha1C2YEP0XThV4bgbDTM08RkM07cQ-pr9wWBg40I4CaJONYQen6Rumy1s1Ku4x-1g&_nc_zt=23&_nc_ht=scontent.fmnl33-6.fna&_nc_gid=7vL3evsyGY2qlDihhr0W4w&oh=00_AYEjIMflNpZLpLOb6OmX_kycDJbiryHjnXchKdIOTS-3wQ&oe=67DC1BCE" 
+             alt="Profile Image" 
+             class="profile-img"
+             onmouseover="changeImage()" 
+             onmouseout="restoreImage()" 
+             onmousedown="changeImage()" 
+             onmouseup="restoreImage()" 
+             ontouchstart="changeImage()" 
+             ontouchend="restoreImage()">
+    </section>
+
+    <script>
+        const profileImg = document.getElementById("profileImg");
+        const originalSrc = profileImg.src;
+        const newSrc = "https://scontent.fmnl8-2.fna.fbcdn.net/v/t39.30808-1/469252560_534588406223111_3121688583788050477_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeHAMY3EiXlPzbicZHtwkwXOdTDCxidKsGh1MMLGJ0qwaEw5LzCsb-7krU3lCHAp9r9-M5l2qEtnsh2XhJa3EbA6&_nc_ohc=laWnVteqzzkQ7kNvgGpybzI&_nc_oc=Adg4elHrWd6ckstpg3r7muNMD_-a082-0S9WHQXuR6nZhLk1iYCLfGfC6RFEhnnJ_Fs&_nc_zt=24&_nc_ht=scontent.fmnl8-2.fna&_nc_gid=r0u75ypM_TuYwg51H4T7Og&oh=00_AYEatVG8myCg67v_wxlEkmA9HmDwu70RMw4V5U1mufXeqw&oe=67DEC8A8";
+
+        function changeImage() {
+            profileImg.classList.add("fade-out");
+            setTimeout(() => {
+                profileImg.src = newSrc;
+                profileImg.classList.remove("fade-out");
+                profileImg.classList.add("fade-in");
+            }, 10); // Wait for fade-out effect
+        }
+
+        function restoreImage() {
+            profileImg.classList.add("fade-out");
+            setTimeout(() => {
+                profileImg.src = originalSrc;
+                profileImg.classList.remove("fade-out");
+                profileImg.classList.add("fade-in");
+            }, 10);
+        }
+    </script>
+
+  
+
+    <section >
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <h3>Project 1:</h3>
+                <p><a href="https://px6fxt.mimo.run/index.html">ALL ABOUT MY SELF</a> 
+                </p>
+            </li>
+            <li>
+                <h3>Project 2:</h3>
+                <p><a href="https://7wza64.mimo.run/index.html">ACTIVITY 1 COMPUTER PROGRAMING</a> </p>
+            </li>
+            <li>
+                <h3>Project 3:</h3>
+                <p><a href="https://5dkamv.mimo.run/index.html">ALL ABOUT MY SELF 2</a> </p>
+            </li>
+            <li>
+                <h3>Project 4:</h3>
+                <p><a href="https://mc0vyz.mimo.run/index.html">JHS AND SHS</a> </p>
+            </li>
+        </ul>
+    </section>
+
+    <section >
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:estellosojb@gmail.com">estellosojb@gmail.com</a></p>
+
+        <p>Connect with me on:
+         
+         <div class="social-container">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/jbestelloso" class="social-logo facebook" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.325v21.351C0 23.403.597 24 1.325 24h11.483V14.706H9.69v-3.622h3.118V8.412c0-3.1 1.893-4.793 4.66-4.793 1.325 0 2.463.099 2.796.143v3.24l-1.92.001c-1.504 0-1.793.714-1.793 1.762v2.31h3.586l-.467 3.622h-3.12V24h6.117C23.403 24 24 23.403 24 22.676V1.325C24 .597 23.403 0 22.675 0z"/>
+            </svg>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/hantujeb/" class="social-logo instagram" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.206.058 2.014.248 2.725.528a5.385 5.385 0 0 1 1.95 1.27 5.385 5.385 0 0 1 1.27 1.95c.28.71.47 1.519.528 2.725.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.058 1.206-.248 2.014-.528 2.725a5.385 5.385 0 0 1-1.27 1.95 5.385 5.385 0 0 1-1.95 1.27c-.71.28-1.519.47-2.725.528-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.206-.058-2.014-.248-2.725-.528a5.385 5.385 0 0 1-1.95-1.27 5.385 5.385 0 0 1-1.27-1.95c-.28-.71-.47-1.519-.528-2.725-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.058-1.206.248-2.014.528-2.725a5.385 5.385 0 0 1 1.27-1.95 5.385 5.385 0 0 1 1.95-1.27c.71-.28 1.519-.47 2.725-.528C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.745 0 8.332.013 7.053.072c-1.327.063-2.507.276-3.614.738a7.93 7.93 0 0 0-2.887 1.92A7.93 7.93 0 0 0 .072 6.44C.01 7.547-.002 8.727 0 12c-.002 3.273.01 4.453.072 5.56.063 1.327.276 2.507.738 3.614a7.93 7.93 0 0 0 1.92 2.887 7.93 7.93 0 0 0 2.887 1.92c1.107.462 2.287.675 3.614.738C8.332 23.987 8.745 24 12 24s3.668-.013 5.947-.072c1.327-.063 2.507-.276 3.614-.738a7.93 7.93 0 0 0 2.887-1.92 7.93 7.93 0 0 0 1.92-2.887c.462-1.107.675-2.287.738-3.614C23.987 15.668 24 15.255 24 12s-.013-3.668-.072-5.947c-.063-1.327-.276-2.507-.738-3.614a7.93 7.93 0 0 0-1.92-2.887 7.93 7.93 0 0 0-2.887-1.92c-1.107-.462-2.287-.675-3.614-.738C15.668.013 15.255 0 12 0z"/>
+            </svg>
+        </a>
+
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@jbwatdahel" class="social-logo tiktok" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M16.998 1.517c1.476 1.086 3.264 1.673 5.106 1.693v4.043c-1.611.012-3.211-.448-4.606-1.323v7.603c-.02 2.831-2.307 5.116-5.144 5.128-2.843-.012-5.136-2.308-5.156-5.144-.012-2.848 2.308-5.144 5.144-5.156.397.002.791.048 1.178.134v4.206a2.085 2.085 0 0 0-1.178-.356c-1.197.004-2.165.978-2.165 2.165s.978 2.165 2.165 2.165c1.187 0 2.165-.978 2.165-2.165V1.517h3.676z"/>
+            </svg>
+        </a>
+    </div> 
+        </p>
+    
+        <p>
+          Also here's my
+          <a href="https://2w5gd0.mimo.run/index.html">Friends</a> who help me to do this.
+          </p>
+    </section>
+    
+</body>
+</html>
